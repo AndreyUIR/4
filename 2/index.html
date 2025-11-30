@@ -1702,7 +1702,7 @@
             },
             'sundowner': {
                 title: 'Сандаунер',
-                quote: 'Kids are cruel, Jack. And I\'m very in touch with my inner child.',
+                quote: 'Like i said, kids are cruel, Jack. And I\'m very in touch with my inner child.',
                 desc: 'Де-факто лидер Desperado, бывший американский военный. Обожает войну и хаос. Оснащен взрывными щитами и двумя огромными мачете "Bloodlust". Его имя отсылает к горячему ветру в Калифорнии.',
                 img: 'https://static.wikia.nocookie.net/metalgear/images/7/7f/SundownerI1.png/revision/latest?cb=20131227122010',
                 videoId: 'Py71Dgn2MlI'
@@ -1768,6 +1768,14 @@
             
             menuContent.style.display = 'none';
             devPage.classList.add('visible');
+        }
+
+        function closeDevPage() {
+            const menuContent = document.getElementById('mgr-menu-content');
+            const devPage = document.getElementById('dev-page-container');
+            
+            devPage.classList.remove('visible');
+            menuContent.style.display = 'flex';
         }
 
         // --- Tools Page Logic ---
