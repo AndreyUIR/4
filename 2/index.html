@@ -4,20 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Моя история</title>
+    <!-- Подключаем шрифты для стиля MGR -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Teko:wght@700&display=swap" rel="stylesheet">
 
     <style>
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
 
+            /* Новый приятный задний фон */
             background: linear-gradient(135deg, #e3f2ff 0%, #fff7ff 100%);
             background-attachment: fixed;
             color: #222;
 
+            /* Декоративные пятна */
             position: relative;
             overflow-x: hidden;
         }
 
+        /* декоративные круги */
         body::before,
         body::after {
             content: "";
@@ -163,16 +170,6 @@
                 width: 100%;
             }
         }
-
-        /* Плавное появление изображений */
-        .img-fade {
-            opacity: 0;
-            transition: opacity 1.2s ease;
-        }
-
-        .img-fade.visible {
-            opacity: 1;
-        }
     </style>
 </head>
 
@@ -181,7 +178,7 @@
     <!-- Главная фотография -->
     <section class="section intro">
         <div class="container">
-            <img class="img-fade" src="начало.jpg" alt="здесь будет изображение">
+            <img src="https://placehold.co/330x430/b8e0ff/333333?text=Главное+фото" alt="Главное фото">
             <p>
                Всем привет! Меня зовут Акушевич Андрей Сергеевич, и этот сайт посвящен моим основным достижениям в жизни. Рассмотрим мы основные этапы моей жизни.
             </p>
@@ -195,24 +192,24 @@
             <div class="cards">
 
                 <div class="card scroll">
-                    <img class="img-fade" src="детство 1.JPG" alt="здесь будет изображение">
-                    <h3>Первое путешествие в детстве</h3>
-                    <p>С самого раннего возраста я путешествовал со своей семьей.</p>
-                    <div class="subtext">Эта фотография была сделана в Крыму в 2010 году.</div>
+                    <img src="https://placehold.co/280x220/ffd6f0/333333?text=Детство+1" alt="Детство 1">
+                    <h3>Первое путешествие в дестве</h3>
+                    <p>С самого раннего возраста я путешествовал со своей семьей</p>
+                    <div class="subtext">Это фотография была сделана в Крыму в далеком 2010 году</div>
                 </div>
 
                 <div class="card scroll">
-                    <img class="img-fade" src="детство 2.JPG" alt="здесь будет изображение">
+                    <img src="https://placehold.co/280x220/ffd6f0/333333?text=Детство+2" alt="Детство 2">
                     <h3>Второе путешествие</h3>
-                    <p>Любое путешествие в раннем возрасте воспринималось как что-то волшебное.</p>
-                    <div class="subtext">2012 год.</div>
+                    <p>В целом, любое путешествие в раннем возрасте воспринималось как что-то волшебное</p>
+                    <div class="subtext">Это было сделано уже в 2012 году</div>
                 </div>
 
                 <div class="card scroll">
-                    <img class="img-fade" src="детство 3.JPG" alt="здесь будет изображение">
+                    <img src="https://placehold.co/280x220/ffd6f0/333333?text=Детство+3" alt="Детство 3">
                     <h3>Третье путешествие</h3>
-                    <p>В финале — самое последнее путешествие того периода.</p>
-                    <div class="subtext">2012 год.</div>
+                    <p>В финале, хотелось бы показать самое последнее путешествие</p>
+                    <div class="subtext">2012 год</div>
                 </div>
 
             </div>
@@ -226,26 +223,25 @@
             <div class="cards">
 
                 <div class="card scroll">
-                    <img class="img-fade" src="подростковость 1.jpg" alt="здесь будет изображение">
-                    <h3>Занятие единоборствами</h3>
-                    <p>В подростковом возрасте я начал увлекаться боевыми искусствами.</p>
-                    <div class="subtext">Фото с соревнований 2016 года.</div>
+                    <img src="https://placehold.co/280x220/e3f2ff/333333?text=Единоборства" alt="Единоборства">
+                    <h3>Занятие единоборставми</h3>
+                    <p>В подростковом возрасте я начал увлекаться боевыми исскуствами</p>
+                    <div class="subtext">На фото - момент с соревнований 2016 года</div>
                 </div>
 
                 <div class="card scroll">
-                    <img class="img-fade" src="001.jpg" alt="здесь будет изображение">
+                    <img src="https://placehold.co/280x220/e3f2ff/333333?text=Минск+1" alt="Минск 1">
                     <h3>Посещение Минска</h3>
-                    <p>В этот период я впервые посетил Минск — город, который сильно повлиял на мою дальнейшую жизнь.</p>
-                    <div class="subtext">На фото — я с попугаем в парке Горького.</div>
+                    <p>Именно в данном возрасте, я впервые посетил Минск, город, который капдинально изменит мою жизнь</p>
+                    <div class="subtext">На фото - я с мамой и тётей</div>
                 </div>
 
                 <div class="card scroll">
-                    <img class="img-fade" src="подростковость 3.jpg" alt="здесь будет изображение">
-                    <h3>Ещё одно посещение Минска</h3>
-                    <p>Ещё одно тёплое воспоминание о подростковом возрасте.</p>
-                    <div class="subtext">Конец 2016 года.</div>
+                    <img src="https://placehold.co/280x220/e3f2ff/333333?text=Минск+2" alt="Минск 2">
+                    <h3>Посещение Минска</h3>
+                    <p>И напоследок, еще парочка воспоминаний от посещения Минска </p>
+                    <div class="subtext">Конец 2016 года</div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -257,31 +253,30 @@
             <div class="cards">
 
                 <div class="card scroll">
-                    <img class="img-fade" src="конец 1.jpg" alt="здесь будет изображение">
+                    <img src="https://placehold.co/280x220/fff7ff/333333?text=Выпускной" alt="Выпускной">
                     <h3>Выпускной из школы</h3>
-                    <p>Одно из самых важных событий — выпускной вечер.</p>
-                    <div class="subtext">На фото — я с лучшими друзьями со школы.</div>
+                    <p>Начнем с основного достижения данного периода - выпускного</p>
+                    <div class="subtext">На фото я со своими лучшими друзяьми со шоклы</div>
                 </div>
 
                 <div class="card scroll">
-                    <img class="img-fade" src="конец 2.jpg" alt="здесь будет изображение">
+                    <img src="https://placehold.co/280x220/fff7ff/333333?text=Золотая+медаль" alt="Золотая медаль">
                     <h3>Результат выпускного</h3>
-                    <p>Я окончил школу с золотой медалью.</p>
-                    <div class="subtext">Церемония проходила в Могилёвском областном театре драмы и комедии.</div>
+                    <p>Окнчил я школу кстати с золотой медалью</p>
+                    <div class="subtext">Церемония проходила кстати в Могилевском областном театре драмы и комедии</div>
                 </div>
 
                 <div class="card scroll">
-                    <img class="img-fade" src="конец 3.jpg" alt="здесь будет изображение">
+                    <img src="https://placehold.co/280x220/fff7ff/333333?text=Академия" alt="Академия">
                     <h3>Поступление в Академию Управления</h3>
-                    <p>Также моим достижением стало первое интервью на телевидении.</p>
-                    <div class="subtext">На фото — коллаж из снимков.</div>
+                    <p>Сюда же можно и отнести мое первое интервью на телевидении</p>
+                    <div class="subtext">Здесь представлени коллаж из фотографий</div>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- Скролл-анимации + появление изображений -->
+    <!-- Скролл-анимации -->
     <script>
         const revealElements = document.querySelectorAll('.scroll');
 
@@ -296,19 +291,1036 @@
 
         document.addEventListener('scroll', revealOnScroll);
         revealOnScroll();
+    </script>
 
-        /* Плавное появление изображений */
-        const imgs = document.querySelectorAll('.img-fade');
+    <!-- MGR Effect Additions -->
+    <style>
+        /* Styles for the effect */
+        #mgr-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9998;
+            display: none;
+        }
+        #mgr-final-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.5s ease-in;
+            pointer-events: auto;
+        }
+        #mgr-final-screen.visible {
+            opacity: 1;
+        }
+        /* White Screen Overlay */
+        #mgr-white-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            z-index: 10000;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s ease-out;
+        }
+        #mgr-white-screen.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
 
-        imgs.forEach(img => {
-            if (img.complete) {
-                img.classList.add('visible');
-            } else {
-                img.addEventListener('load', () => {
-                    img.classList.add('visible');
-                });
+        .mgr-content {
+            text-align: center;
+            transform: skew(-10deg);
+            position: relative;
+            width: 100%;
+            height: 100%; /* Occupy full height for positioning */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        /* METAL GEAR RISING STYLE */
+        .mgr-text {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 900;
+            font-size: 4vw;
+            color: #e0e0e0; /* Metallic Silver */
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            margin: 0;
+            line-height: 1.1;
+            
+            /* Metallic Gradient Text */
+            background: linear-gradient(to bottom, #ffffff 0%, #a0a0a0 50%, #ffffff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            
+            /* Glow */
+            filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.5));
+            
+            position: relative;
+            z-index: 2;
+            display: inline-block;
+        }
+
+        /* Static Flickering Lightning - Updated */
+        .mgr-text::after {
+            content: '';
+            position: absolute;
+            top: 60%; /* Shifted lower */
+            left: 0;
+            width: 100%; /* Covers from M to G */
+            height: 140%;
+            
+            /* Electric Gradient */
+            background: linear-gradient(90deg, transparent 0%, rgba(0, 255, 255, 0.5) 10%, #fff 50%, rgba(0, 255, 255, 0.5) 90%, transparent 100%);
+            
+            /* More Wavy/Jagged Shape */
+            clip-path: polygon(
+                0% 50%, 3% 45%, 6% 55%, 9% 40%, 12% 60%, 15% 45%, 18% 55%, 21% 40%, 24% 60%, 27% 45%, 30% 55%,
+                33% 40%, 36% 60%, 39% 45%, 42% 55%, 45% 40%, 48% 60%, 51% 45%, 54% 55%, 57% 40%, 60% 60%,
+                63% 45%, 66% 55%, 69% 40%, 72% 60%, 75% 45%, 78% 55%, 81% 40%, 84% 60%, 87% 45%, 90% 55%,
+                93% 40%, 96% 60%, 100% 50%,
+                96% 65%, 93% 55%, 90% 65%, 87% 55%, 84% 65%, 81% 55%, 78% 65%, 75% 55%, 72% 65%, 69% 55%,
+                66% 65%, 63% 55%, 60% 65%, 57% 55%, 54% 65%, 51% 55%, 48% 65%, 45% 55%, 42% 65%, 39% 55%,
+                36% 65%, 33% 55%, 30% 65%, 27% 55%, 24% 65%, 21% 55%, 18% 65%, 15% 55%, 12% 65%, 9% 55%,
+                6% 65%, 3% 55%, 0% 60%
+            );
+            
+            opacity: 0;
+            transform: translateY(-50%);
+            animation: lightning-flicker 3s infinite; /* Slower interval */
+            pointer-events: none;
+            mix-blend-mode: screen;
+            filter: drop-shadow(0 0 5px #00ffff);
+        }
+
+        @keyframes lightning-flicker {
+            0% { opacity: 0; }
+            2% { opacity: 1; transform: translateY(-50%) scaleY(1.2); }
+            4% { opacity: 0; }
+            
+            /* Long Pause */
+            
+            30% { opacity: 0; }
+            32% { opacity: 0.8; transform: translateY(-55%) scaleY(1); }
+            34% { opacity: 0; }
+            
+            /* Pause */
+            
+            60% { opacity: 0; }
+            61% { opacity: 1; transform: translateY(-45%) scaleY(1.3); }
+            62% { opacity: 0.5; }
+            63% { opacity: 0; }
+            
+            100% { opacity: 0; }
+        }
+
+        /* REVENGEANCE STYLE - UPDATED */
+        .mgr-subtext {
+            font-family: 'Teko', sans-serif;
+            font-weight: 700;
+            font-size: 8vw;
+            color: #e0e0e0; 
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-top: -10px;
+            line-height: 0.9;
+            
+            /* Metallic Gradient */
+            background: linear-gradient(to bottom, #ffffff 0%, #a0a0a0 50%, #ffffff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            
+            /* Glow */
+            filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.5));
+            
+            position: relative;
+            z-index: 3;
+            
+            /* Centered */
+            margin-left: 0;
+            text-align: center;
+        }
+
+        /* Press Any Key Style */
+        .mgr-press-key {
+            position: absolute;
+            bottom: 15%;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.5vw;
+            color: #00ffff;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            animation: blink-text 1.5s infinite;
+            text-shadow: 0 0 5px #00ffff;
+            opacity: 0; /* Hidden initially, shown via JS or CSS delay */
+            animation-delay: 1s; /* Wait a bit before starting blinking */
+            animation-fill-mode: forwards;
+        }
+
+        /* Author Credit Style */
+        .mgr-author {
+            position: absolute;
+            bottom: 20px;
+            right: 30px;
+            font-family: 'Teko', sans-serif;
+            font-size: 1.8vw;
+            color: rgba(255, 255, 255, 0.7);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            text-shadow: 0 0 2px rgba(0, 255, 255, 0.3);
+            z-index: 10;
+        }
+
+        @keyframes blink-text {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        
+        /* Decorative "Cut" Line */
+        .mgr-cut-line {
+            position: absolute;
+            top: 50%;
+            left: -20%;
+            width: 140%;
+            height: 2px;
+            background: #fff;
+            box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+            transform: rotate(-5deg) scaleX(0);
+            animation: cut-anim 0.3s forwards 0.5s;
+            z-index: 4;
+        }
+
+        @keyframes cut-anim {
+            0% { transform: rotate(-5deg) scaleX(0); opacity: 1; }
+            50% { transform: rotate(-5deg) scaleX(1); opacity: 1; }
+            100% { transform: rotate(-5deg) scaleX(1); opacity: 0; }
+        }
+
+        .mgr-flash {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: white;
+            opacity: 0;
+            pointer-events: none;
+        }
+        @keyframes shake {
+            0% { transform: translate(1px, 1px) rotate(0deg); }
+            10% { transform: translate(-1px, -2px) rotate(-1deg); }
+            20% { transform: translate(-3px, 0px) rotate(1deg); }
+            30% { transform: translate(3px, 2px) rotate(0deg); }
+            40% { transform: translate(1px, -1px) rotate(1deg); }
+            50% { transform: translate(-1px, 2px) rotate(-1deg); }
+            60% { transform: translate(-3px, 1px) rotate(0deg); }
+            70% { transform: translate(3px, 1px) rotate(-1deg); }
+            80% { transform: translate(-1px, -1px) rotate(1deg); }
+            90% { transform: translate(1px, 2px) rotate(0deg); }
+            100% { transform: translate(1px, -2px) rotate(-1deg); }
+        }
+        .shaking {
+            animation: shake 0.5s;
+            animation-iteration-count: infinite;
+        }
+
+        /* --- NEW MENU STYLES --- */
+        .mgr-menu-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 3vw;
+            color: #00ffff;
+            margin-bottom: 40px;
+            text-shadow: 0 0 10px #00ffff;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .mgr-menu-items {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 400px;
+        }
+
+        .mgr-menu-item {
+            font-family: 'Teko', sans-serif;
+            font-size: 28px;
+            color: #e0e0e0;
+            background: rgba(0, 0, 0, 0.7);
+            border: 1px solid #555;
+            padding: 10px 20px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: all 0.2s;
+            position: relative;
+            overflow: hidden;
+            transform: skewX(-15deg);
+            text-align: center;
+        }
+
+        .mgr-menu-item:hover {
+            background: #00ffff;
+            color: #000;
+            border-color: #fff;
+            box-shadow: 0 0 15px #00ffff;
+            font-weight: bold;
+        }
+
+        .mgr-menu-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.8), transparent);
+            transition: 0.5s;
+        }
+
+        .mgr-menu-item:hover::before {
+            left: 100%;
+        }
+
+        /* --- GAME SITE STYLES --- */
+        #game-site-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #0a0a0a;
+            z-index: 10001; /* Above everything */
+            display: none; /* Hidden by default */
+            flex-direction: column;
+            color: #e0e0e0;
+            font-family: 'Arial', sans-serif;
+            overflow-y: auto;
+        }
+
+        #game-site-container.visible {
+            display: flex;
+        }
+
+        /* Navigation Bar */
+        .game-nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.9);
+            border-bottom: 2px solid #00ffff;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+        }
+
+        .game-nav-item {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 18px;
+            color: #e0e0e0;
+            margin: 0 30px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            position: relative;
+            transition: color 0.3s;
+            padding: 10px 0;
+        }
+
+        .game-nav-item:hover {
+            color: #00ffff;
+            text-shadow: 0 0 8px #00ffff;
+        }
+
+        /* Dropdown Menu */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(10, 10, 10, 0.95);
+            min-width: 200px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            border: 1px solid #00ffff;
+            z-index: 1;
+            padding: 10px 0;
+        }
+
+        .game-nav-item:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-item {
+            color: #e0e0e0;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-family: 'Teko', sans-serif;
+            font-size: 20px;
+            text-align: center;
+            transition: background 0.3s;
+        }
+
+        .dropdown-item:hover {
+            background-color: #00ffff;
+            color: #000;
+        }
+
+        /* Content Sections */
+        .game-section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .game-section h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 36px;
+            color: #00ffff;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        .game-section p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #ccc;
+            max-width: 800px;
+            margin: 0 auto 20px;
+        }
+
+        /* Back Button */
+        .back-button {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: transparent;
+            border: 2px solid #ff0000;
+            color: #ff0000;
+            padding: 10px 20px;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 16px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: all 0.3s;
+            z-index: 101;
+        }
+
+        .back-button:hover {
+            background: #ff0000;
+            color: #fff;
+            box-shadow: 0 0 15px #ff0000;
+        }
+
+        /* Character Cards (Placeholder style) */
+        .char-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        .char-card {
+            width: 250px;
+            background: #1a1a1a;
+            border: 1px solid #333;
+            padding: 15px;
+            transition: transform 0.3s, border-color 0.3s;
+            cursor: pointer;
+        }
+        /* Removed hover effects as requested */
+        /* .char-card:hover {
+            transform: translateY(-5px);
+            border-color: #00ffff;
+        } */
+        .char-card h3 {
+            font-family: 'Teko', sans-serif;
+            font-size: 24px;
+            color: #fff;
+            margin: 10px 0 5px;
+        }
+        .char-card p {
+            font-size: 14px;
+            color: #aaa;
+        }
+
+        /* --- CHARACTER DETAIL OVERLAY --- */
+        #character-detail-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #0a0a0a;
+            z-index: 10002; /* Above game site */
+            display: none;
+            flex-direction: column;
+            color: #e0e0e0;
+            font-family: 'Arial', sans-serif;
+            overflow-y: auto;
+        }
+
+        #character-detail-container.visible {
+            display: flex;
+        }
+
+        .char-detail-header {
+            background: rgba(0, 0, 0, 0.9);
+            border-bottom: 2px solid #00ffff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+        }
+
+        .char-detail-header h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 24px;
+            color: #00ffff;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .char-detail-content {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .char-detail-image {
+            flex: 1;
+            min-width: 300px;
+            height: 500px;
+            background: #1a1a1a;
+            border: 1px solid #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .char-detail-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .char-detail-image::before {
+            content: '';
+            display: none; /* Hide the NO IMAGE DATA text since we have images */
+        }
+
+        .char-detail-info {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .char-detail-title {
+            font-family: 'Teko', sans-serif;
+            font-size: 64px;
+            color: #fff;
+            margin: 0 0 20px;
+            text-transform: uppercase;
+            line-height: 0.9;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        }
+
+        .char-detail-desc {
+            font-size: 20px;
+            line-height: 1.8;
+            color: #ccc;
+            border-left: 4px solid #00ffff;
+            padding-left: 20px;
+            background: linear-gradient(90deg, rgba(0, 255, 255, 0.05), transparent);
+        }
+
+        .char-detail-quote {
+            font-family: 'Teko', sans-serif;
+            font-size: 32px;
+            color: #ff0000;
+            margin-bottom: 30px;
+            font-style: italic;
+            text-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+            position: relative;
+            padding-left: 40px;
+        }
+
+        .char-detail-quote::before {
+            content: '"';
+            position: absolute;
+            left: 0;
+            top: -10px;
+            font-size: 60px;
+            color: #555;
+        }
+
+        .close-detail-btn {
+            background: transparent;
+            border: 2px solid #ff0000;
+            color: #ff0000;
+            padding: 10px 30px;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 16px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: all 0.3s;
+            position: static; /* Reset absolute positioning */
+        }
+
+        .close-detail-btn:hover {
+            background: #ff0000;
+            color: #fff;
+            box-shadow: 0 0 15px #ff0000;
+            transform: none; /* Reset scale */
+        }
+
+    </style>
+
+    <div id="mgr-overlay">
+        <canvas id="lightning-canvas"></canvas>
+        <div id="mgr-flash" class="mgr-flash"></div>
+    </div>
+
+    <!-- Removed white screen overlay, replaced with menu logic -->
+    <!-- <div id="mgr-white-screen"></div> -->
+
+    <div id="mgr-final-screen" style="display: none;">
+        <!-- Title Screen Content -->
+        <div class="mgr-content" id="mgr-title-content">
+            <div class="mgr-text">METAL GEAR RISING</div>
+            <div class="mgr-subtext">REVENGEANCE</div>
+            <div class="mgr-cut-line"></div>
+            <div class="mgr-press-key">Нажмите любую клавишу, чтобы продолжить</div>
+            <div class="mgr-author">создано Акушевичем Андреем Сергеевичем</div>
+        </div>
+
+        <!-- Menu Screen Content (Hidden initially) -->
+        <div class="mgr-content" id="mgr-menu-content" style="display: none;">
+            <div class="mgr-menu-title">Выбор вариантов</div>
+            <div class="mgr-menu-items">
+                <div class="mgr-menu-item" onclick="openGameSite()">Сайт о игре</div>
+                <div class="mgr-menu-item" onclick="alert('Информация о разработчике...')">О разработчике</div>
+                <div class="mgr-menu-item" onclick="alert('Список инструментов...')">Используемые инструменты</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GAME SITE CONTAINER -->
+    <div id="game-site-container">
+        <nav class="game-nav">
+            <div class="game-nav-item" onclick="scrollToSection('game-history')">История игры</div>
+            <div class="game-nav-item" onclick="scrollToSection('game-plot')">Сюжет</div>
+            <div class="game-nav-item">
+                Персонажи
+                <div class="dropdown-content">
+                    <div class="dropdown-item" onclick="scrollToCharacter('char-raiden')">Raiden</div>
+                    <div class="dropdown-item" onclick="scrollToCharacter('char-sam')">Jetstream Sam</div>
+                    <div class="dropdown-item" onclick="scrollToCharacter('char-wolf')">Blade Wolf</div>
+                    <div class="dropdown-item" onclick="scrollToCharacter('char-mistral')">Mistral</div>
+                    <div class="dropdown-item" onclick="scrollToCharacter('char-monsoon')">Monsoon</div>
+                    <div class="dropdown-item" onclick="scrollToCharacter('char-sundowner')">Sundowner</div>
+                    <div class="dropdown-item" onclick="scrollToCharacter('char-khamsin')">Khamsin</div>
+                    <div class="dropdown-item" onclick="scrollToCharacter('char-armstrong')">Senator Armstrong</div>
+                </div>
+            </div>
+        </nav>
+
+        <div id="game-history" class="game-section">
+            <h2>История игры</h2>
+            <p>Metal Gear Rising: Revengeance — спин-офф серии Metal Gear, разработанный PlatinumGames и спродюсированный Kojima Productions. Выпущенная в 2013 году, игра отличается от основной серии акцентом на быстрый и агрессивный экшен с использованием меча.</p>
+            <p>Изначально проект разрабатывался Kojima Productions под названием Metal Gear Solid: Rising, но столкнулся с трудностями в реализации механики разрезания. PlatinumGames взяли проект под свое крыло и превратили его в один из лучших слэшеров десятилетия.</p>
+        </div>
+
+        <div id="game-plot" class="game-section">
+            <h2>Сюжет</h2>
+            <p>События разворачиваются спустя четыре года после Metal Gear Solid 4: Guns of the Patriots. Главный герой, киборг-ниндзя Райден, работает на частную военную компанию Maverick Security Consulting.</p>
+            <p>После нападения конкурирующей ЧВК Desperado Enforcement, Райден оказывается втянут в глобальный заговор, угрожающий мировой стабильности. Ему предстоит остановить использование детей-солдат и сразиться с могущественными противниками, включая сенатора Армстронга.</p>
+        </div>
+
+        <div id="game-chars" class="game-section">
+            <h2>Основные Персонажи</h2>
+            <div class="char-grid">
+                <div id="char-raiden" class="char-card" onclick="openCharacterDetail('raiden')">
+                    <h3>Райден</h3>
+                    <p>Главный герой, киборг-ниндзя, владеющий высокочастотным мечом.</p>
+                </div>
+                <div id="char-sam" class="char-card" onclick="openCharacterDetail('sam')">
+                    <h3>Реактивный Сэм</h3>
+                    <p>Опытный мечник, соперник Райдена с собственным кодексом чести.</p>
+                </div>
+                <div id="char-wolf" class="char-card" onclick="openCharacterDetail('wolf')">
+                    <h3>Блейдвульф</h3>
+                    <p>ИИ в форме волка, верный напарник Райдена с острым умом и цепной пилой.</p>
+                </div>
+                <div id="char-mistral" class="char-card" onclick="openCharacterDetail('mistral')">
+                    <h3>Мистраль</h3>
+                    <p>Член "Ветров Разрушения". Использует уникальное оружие из рук киборгов.</p>
+                </div>
+                <div id="char-monsoon" class="char-card" onclick="openCharacterDetail('monsoon')">
+                    <h3>Монсун</h3>
+                    <p>Ниндзя-киборг, способный разделять свое тело благодаря магнитной силе.</p>
+                </div>
+                <div id="char-sundowner" class="char-card" onclick="openCharacterDetail('sundowner')">
+                    <h3>Сандаунер</h3>
+                    <p>Лидер "Ветров Разрушения", использующий взрывные щиты и огромные мачете.</p>
+                </div>
+                <div id="char-khamsin" class="char-card" onclick="openCharacterDetail('khamsin')">
+                    <h3>Хамсин</h3>
+                    <p>Тяжеловооруженный наемник, управляющий мехом с огромным цепным топором.</p>
+                </div>
+                <div id="char-armstrong" class="char-card" onclick="openCharacterDetail('armstrong')">
+                    <h3>Сенатор Армстронг</h3>
+                    <p>Главный антагонист, обладающий невероятной физической силой благодаря наномашинам.</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="back-button" onclick="closeGameSite()">Назад в меню</button>
+    </div>
+
+    <!-- CHARACTER DETAIL CONTAINER -->
+    <div id="character-detail-container">
+        <div class="char-detail-header">
+            <h2>База данных // Доступ ограничен</h2>
+            <button class="close-detail-btn" onclick="closeCharacterDetail()">Вернуться назад</button>
+        </div>
+        <div class="char-detail-content">
+            <div class="char-detail-image">
+               <img id="detail-img" src="https://static.wikia.nocookie.net/metalgear/images/1/14/RaidenPortrait2018.png" alt="Character Image">
+            </div>
+            <div class="char-detail-info">
+                <h1 id="detail-title" class="char-detail-title">Имя</h1>
+                <div id="detail-quote" class="char-detail-quote"></div>
+                <p id="detail-desc" class="char-detail-desc">Описание....</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hidden YouTube Player -->
+    <div id="player" style="display:none;"></div>
+
+    <script>
+        // Load YouTube IFrame Player API code asynchronously.
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        var player;
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '0',
+                width: '0',
+                videoId: '',
+                playerVars: {
+                    'playsinline': 1,
+                    'controls': 0
+                },
+                events: {
+                    'onReady': onPlayerReady
+                }
+            });
+        }
+
+        function onPlayerReady(event) {
+            // Player is ready
+            console.log("Music Player Ready");
+        }
+
+        // Timer to trigger effect
+        setTimeout(() => {
+            triggerMgrEffect();
+        }, 10000);
+
+        function triggerMgrEffect() {
+            const overlay = document.getElementById('mgr-overlay');
+            const canvas = document.getElementById('lightning-canvas');
+            const ctx = canvas.getContext('2d');
+            const flashDiv = document.getElementById('mgr-flash');
+            const body = document.body;
+            
+            overlay.style.display = 'block';
+            body.classList.add('shaking');
+            
+            // Resize canvas
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+
+            let frameCount = 0;
+            const durationFrames = 120; // approx 2 seconds of chaos
+            
+            const interval = setInterval(() => {
+                // Clear canvas
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                
+                // Random background flash
+                if (Math.random() > 0.7) {
+                    flashDiv.style.opacity = Math.random() * 0.8;
+                } else {
+                    flashDiv.style.opacity = 0;
+                }
+
+                // Draw Multiple Lightning Bolts
+                const numBolts = Math.floor(Math.random() * 3) + 1;
+                for(let i=0; i<numBolts; i++) {
+                    drawLightning(ctx, Math.random() * canvas.width, 0, Math.random() * canvas.width, canvas.height);
+                }
+
+                // Horizontal slash effect occasionally
+                if (Math.random() > 0.8) {
+                    drawSlash(ctx);
+                }
+
+                frameCount++;
+                
+                if (frameCount >= durationFrames) {
+                    clearInterval(interval);
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                    flashDiv.style.opacity = 1; // Final blinding flash
+                    body.classList.remove('shaking');
+                    
+                    setTimeout(() => {
+                        showFinalScreen();
+                    }, 100);
+                }
+            }, 30); // Fast updates
+        }
+
+        function drawLightning(ctx, x1, y1, x2, y2) {
+            ctx.strokeStyle = '#00ffff'; // Cyan MGR style
+            ctx.lineWidth = Math.random() * 3 + 1;
+            ctx.shadowBlur = 15;
+            ctx.shadowColor = '#00ffff';
+            ctx.lineCap = 'round';
+            
+            ctx.beginPath();
+            ctx.moveTo(x1, y1);
+            
+            let currentX = x1;
+            let currentY = y1;
+            const steps = 20;
+            const dy = (y2 - y1) / steps;
+            
+            for (let i = 0; i < steps; i++) {
+                const nextX = currentX + (Math.random() * 60 - 30);
+                const nextY = currentY + dy + (Math.random() * 20 - 10);
+                
+                ctx.lineTo(nextX, nextY);
+                currentX = nextX;
+                currentY = nextY;
             }
-        });
+            
+            ctx.stroke();
+        }
+
+        function drawSlash(ctx) {
+            ctx.strokeStyle = '#ff0000'; // Red slash
+            ctx.lineWidth = 2;
+            ctx.shadowBlur = 20;
+            ctx.shadowColor = '#ff0000';
+            
+            ctx.beginPath();
+            const startY = Math.random() * ctx.canvas.height;
+            ctx.moveTo(0, startY);
+            ctx.lineTo(ctx.canvas.width, startY + (Math.random() * 200 - 100));
+            ctx.stroke();
+        }
+
+        function showFinalScreen() {
+            const finalScreen = document.getElementById('mgr-final-screen');
+            const overlay = document.getElementById('mgr-overlay');
+            
+            overlay.style.display = 'none';
+            finalScreen.style.display = 'flex';
+            
+            // Force reflow
+            void finalScreen.offsetWidth;
+            finalScreen.classList.add('visible');
+
+            // Enable key press and click listener
+            document.addEventListener('keydown', handleInteraction);
+            document.addEventListener('click', handleInteraction);
+        }
+
+        function handleInteraction(e) {
+            // Remove listeners so it only triggers once
+            document.removeEventListener('keydown', handleInteraction);
+            document.removeEventListener('click', handleInteraction);
+            
+            // Transition to Menu
+            const titleContent = document.getElementById('mgr-title-content');
+            const menuContent = document.getElementById('mgr-menu-content');
+            
+            titleContent.style.display = 'none';
+            menuContent.style.display = 'flex';
+        }
+
+        // --- Game Site Logic ---
+        function openGameSite() {
+            const menuContent = document.getElementById('mgr-menu-content');
+            const gameSite = document.getElementById('game-site-container');
+            
+            menuContent.style.display = 'none';
+            gameSite.classList.add('visible');
+        }
+
+        function closeGameSite() {
+            const menuContent = document.getElementById('mgr-menu-content');
+            const gameSite = document.getElementById('game-site-container');
+            
+            gameSite.classList.remove('visible');
+            menuContent.style.display = 'flex';
+        }
+
+        function scrollToSection(id) {
+            const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        function scrollToCharacter(id) {
+            const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                // Optional: Add a flash effect to highlight the card
+                element.style.borderColor = '#00ffff';
+                setTimeout(() => {
+                    element.style.borderColor = '#333';
+                }, 1000);
+            }
+        }
+
+        // Character Data
+        const characterData = {
+            'raiden': {
+                title: 'Райден',
+                quote: 'I am Lightning... the rain transformed.',
+                desc: 'Райден, также известен как Джек, в прошлом известен как Джек-потрошитель, Белый Дьявол и Снейк — наемник и бывший спецназовец. Будучи ребёнком-солдатом под опекой Солидуса Снейка (который, является убийцей его семьи), Райден был выбран "Патриотами" для того, чтобы пройти проверку в Плане S3: Solid Snake Simulation - проект по созданию идеального солдата т.е. создание ситуации похожей на инцидент на Shadow Moses для становления нового бойца, равного Солиду Снейку, для использования его в своих целях. Позже стал помогать Paradise Lost Army в их борьбе против Патриотов, но был схвачен ими, пережил тяжелейшие пытки и прошёл процесс кибернетизации. После успешного побега Райден помог Солиду Снейку в борьбе против Ликвида Оцелота. Позднее присоединился к ЧВК Maverick в качестве телохранителя, чтобы держаться подальше от войн по просьбе семьи, но вновь вступил в конфликт с конкурирующей организацией Desperado, помешавшей выполнению миссии Райдена по защите африканского премьер-министра, а сам Райден получил серьёзные ранения. После этого раскрыл сеть заговоров по похищению у детей-сирот головного мозга с целью создания армии киборгов, за которыми стоял сенатор правительства США Стивен Армстронг.',
+                img: 'https://static.wikia.nocookie.net/metalgear/images/1/14/RaidenPortrait2018.png',
+                videoId: 'pkb1IwNcp7U'
+            },
+            'sam': {
+                title: 'Реактивный Сэм',
+                quote: 'Show me a good time, Jack!',
+                desc: 'Сэмюэль Родригес, также известный как Минуано. Бразильский мастер меча, потомок школы "Родригес Синкагэ-рю". Его кибернетическая рука и экзоскелет лишь дополняют его невероятные навыки владения мечом "Мурасама".',
+                img: 'https://i.ytimg.com/vi/WyjOfkZqAEg/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGHIgSCgoMA8=&amp;rs=AOn4CLBrdamcbnXjtXkSAsJufo9H9j2k_A',
+                videoId: 'ADXemWn5NGQ'
+            },
+            'wolf': {
+                title: 'Блейдвульф',
+                quote: 'I was designed to follow orders... but I am not a machine.',
+                desc: 'LQ-84i, прототип беспилотного оружия с искусственным интеллектом. Изначально запрограммирован на подчинение Desperado, но после поражения от Райдена и перепрограммирования обрел свободу воли и стал верным союзником.',
+                img: 'https://files.vgtimes.ru/gallery/thumb/306/0ijhd.webp',
+                videoId: '1yT1xzUSV_0'
+            },
+            'mistral': {
+                title: 'Мистраль',
+                quote: 'A stranger I remain.',
+                desc: 'Командир подразделения Desperado, родом из Алжира. Ее тело модифицировано для использования множества рук "Dwarf Gekko", которые она использует как оружие и хлыст. Ее кодовое имя происходит от холодного северо-западного ветра.',
+                img: 'https://i.pinimg.com/originals/0f/c9/82/0fc9828f0a77b39d4476d2868bf10a3c.jpg',
+                videoId: 'vwHVhGTEdS4'
+            },
+            'monsoon': {
+                title: 'Монсун',
+                quote: 'Memes. The DNA of the soul.',
+                desc: 'Ниндзя из Камбоджи, член "Ветров Разрушения". Владеет силой магнетизма, позволяющей ему разделять свое тело на сегменты для уклонения от атак. Использует тактические саи и дымовые гранаты. Философ-нигилист.',
+                img: 'https://i.ytimg.com/vi/j_-oc2TJcLs/maxresdefault.jpg',
+                videoId: '7vaHGZN4HYE'
+            },
+            'sundowner': {
+                title: 'Сандаунер',
+                quote: 'Kids are cruel, Jack. And I\'m very in touch with my inner child.',
+                desc: 'Де-факто лидер Desperado, бывший американский военный. Обожает войну и хаос. Оснащен взрывными щитами и двумя огромными мачете "Bloodlust". Его имя отсылает к горячему ветру в Калифорнии.',
+                img: 'https://static.wikia.nocookie.net/metalgear/images/7/7f/SundownerI1.png/revision/latest?cb=20131227122010',
+                videoId: 'Py71Dgn2MlI'
+            },
+            'khamsin': {
+                title: 'Хамсин',
+                quote: 'Ill save this country from itself!',
+                desc: 'Оперативник Desperado, пилотирующий тяжелый боевой мех. Вооружен гигантским цепным топором. Появляется в DLC про Блейд Вульфа. Известен своей фанатичной преданностью идеям свободы (в его понимании).',
+                img: 'https://static.wikia.nocookie.net/metalgear/images/d/d0/Khamsin.jpg',
+                videoId: 'mUfTybEv1HU'
+            },
+            'armstrong': {
+                title: 'Сенатор Армстронг',
+                quote: 'Nanomachines, son!',
+                desc: 'Стивен Армстронг, сенатор от штата Колорадо и тайный спонсор Desperado. Использует наномашины, которые затвердевают в ответ на физическое воздействие, делая его практически неуязвимым. Мечтает перестроить Америку, уничтожив слабых.',
+                img: 'https://www.digitaltrends.com/wp-content/uploads/2025/03/Senator-Armstrong-492331991.webp',
+                videoId: 'ZV2dnNV03cw'
+            }
+        };
+
+        function openCharacterDetail(charId) {
+            const data = characterData[charId];
+            if (data) {
+                document.getElementById('detail-title').innerText = data.title;
+                document.getElementById('detail-quote').innerText = data.quote || '';
+                document.getElementById('detail-desc').innerText = data.desc;
+                
+                // Update Image
+                const imgElement = document.getElementById('detail-img');
+                if (data.img) {
+                    imgElement.src = data.img;
+                    imgElement.alt = data.title;
+                } else {
+                    // Fallback if no image
+                    imgElement.src = 'https://placehold.co/300x500?text=No+Image';
+                }
+                
+                // Play Music
+                if (player && data.videoId) {
+                    player.loadVideoById(data.videoId);
+                    player.setVolume(50); // Set volume to 50%
+                }
+
+                const detailContainer = document.getElementById('character-detail-container');
+                detailContainer.classList.add('visible');
+            }
+        }
+
+        function closeCharacterDetail() {
+            const detailContainer = document.getElementById('character-detail-container');
+            detailContainer.classList.remove('visible');
+            
+            // Stop Music
+            if (player) {
+                player.stopVideo();
+            }
+        }
     </script>
 
 </body>
