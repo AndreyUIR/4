@@ -907,6 +907,322 @@
             transform: none; /* Reset scale */
         }
 
+        /* --- DEVELOPER PAGE STYLES --- */
+        #dev-page-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #050505;
+            z-index: 10003;
+            display: none;
+            flex-direction: column;
+            color: #e0e0e0;
+            font-family: 'Arial', sans-serif;
+            overflow-y: auto;
+        }
+
+        #dev-page-container.visible {
+            display: flex;
+        }
+
+        .dev-header {
+            background: rgba(0, 0, 0, 0.95);
+            border-bottom: 2px solid #00ffff;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+        }
+
+        .dev-header h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 28px;
+            color: #00ffff;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+        }
+
+        .close-dev-btn {
+            background: transparent;
+            border: 1px solid #00ffff;
+            color: #00ffff;
+            padding: 8px 24px;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 14px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: all 0.3s;
+        }
+
+        .close-dev-btn:hover {
+            background: #00ffff;
+            color: #000;
+            box-shadow: 0 0 10px #00ffff;
+        }
+
+        .dev-content {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px 60px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .dev-intro {
+            text-align: center;
+            margin-bottom: 60px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .dev-photo-frame {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 20px;
+            border: 2px solid #333;
+            border-radius: 50%;
+            overflow: hidden;
+            background: #1a1a1a;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+            position: relative;
+        }
+
+        .dev-photo-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .dev-photo-frame img[src=""] {
+            opacity: 0;
+        }
+        .dev-photo-frame::after {
+            content: 'NO PHOTO';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #555;
+            font-family: 'Orbitron', sans-serif;
+            z-index: -1;
+        }
+
+        .dev-desc {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #ccc;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .dev-section-title {
+            font-family: 'Teko', sans-serif;
+            font-size: 42px;
+            color: #fff;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            border-left: 5px solid #00ffff;
+            padding-left: 15px;
+            background: linear-gradient(90deg, rgba(0, 255, 255, 0.1), transparent);
+        }
+
+        .dev-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        /* Make the last item span full width if it's the 4th item in a 3-column grid, 
+           or just center it if it's alone on the last row */
+        .dev-card:last-child {
+             grid-column: 1 / -1;
+             max-width: 300px; /* Limit width to look like other cards */
+             margin: 0 auto;   /* Center horizontally */
+             width: 100%;      /* Ensure it takes up available space up to max-width */
+        }
+
+        .dev-card {
+            background: #111;
+            border: 1px solid #333;
+            padding: 15px;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .dev-card:hover {
+            /* transform: translateY(-5px); */
+            border-color: #333; /* Reset to default border color */
+            box-shadow: none; /* Reset shadow */
+        }
+
+        .dev-card-img {
+            width: 100%;
+            height: 180px;
+            background: #222;
+            margin-bottom: 15px;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .dev-card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .dev-card-img img[src=""] {
+            opacity: 0;
+        }
+        
+        .dev-card-img::before {
+            content: 'IMG';
+            color: #444;
+            font-family: 'Orbitron', sans-serif;
+            position: absolute;
+            z-index: 0;
+        }
+
+        .dev-card p {
+            font-size: 16px;
+            color: #aaa;
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* --- TOOLS PAGE STYLES --- */
+        #tools-page-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #050505;
+            z-index: 10003;
+            display: none;
+            flex-direction: column;
+            color: #e0e0e0;
+            font-family: 'Arial', sans-serif;
+            overflow-y: auto;
+        }
+
+        #tools-page-container.visible {
+            display: flex;
+        }
+
+        .tools-header {
+            background: rgba(0, 0, 0, 0.95);
+            border-bottom: 2px solid #00ffff;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+        }
+
+        .tools-header h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 28px;
+            color: #00ffff;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+        }
+
+        .close-tools-btn {
+            background: transparent;
+            border: 1px solid #00ffff;
+            color: #00ffff;
+            padding: 8px 24px;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 14px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: all 0.3s;
+        }
+
+        .close-tools-btn:hover {
+            background: #00ffff;
+            color: #000;
+            box-shadow: 0 0 10px #00ffff;
+        }
+
+        .tools-content {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px 60px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .tools-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .tool-item {
+            background: #111;
+            border: 1px solid #333;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            transition: all 0.3s;
+        }
+
+        /* Hover effect removed as requested */
+        /* .tool-item:hover { ... } */
+
+        .tool-icon {
+            width: 40px;
+            height: 40px;
+            background: #222;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            color: #00ffff;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .tool-info h3 {
+            margin: 0 0 5px;
+            font-family: 'Teko', sans-serif;
+            font-size: 24px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .tool-info p {
+            margin: 0;
+            font-size: 14px;
+            color: #aaa;
+        }
+
     </style>
 
     <div id="mgr-overlay">
@@ -932,8 +1248,8 @@
             <div class="mgr-menu-title">Выбор вариантов</div>
             <div class="mgr-menu-items">
                 <div class="mgr-menu-item" onclick="openGameSite()">Сайт о игре</div>
-                <div class="mgr-menu-item" onclick="alert('Информация о разработчике...')">О разработчике</div>
-                <div class="mgr-menu-item" onclick="alert('Список инструментов...')">Используемые инструменты</div>
+                <div class="mgr-menu-item" onclick="openDevPage()">О разработчике</div>
+                <div class="mgr-menu-item" onclick="openToolsPage()">Используемые инструменты</div>
             </div>
         </div>
     </div>
@@ -1026,6 +1342,129 @@
                 <div id="detail-quote" class="char-detail-quote"></div>
                 <p id="detail-desc" class="char-detail-desc">Описание....</p>
             </div>
+        </div>
+    </div>
+
+    <!-- DEVELOPER PAGE CONTAINER -->
+    <div id="dev-page-container">
+        <div class="dev-header">
+            <h2>О Разработчике</h2>
+            <button class="close-dev-btn" onclick="closeDevPage()">Назад</button>
+        </div>
+        
+        <div class="dev-content">
+            <!-- Main Developer Photo -->
+            <div class="dev-intro">
+                <div class="dev-photo-frame">
+                    <img id="dev-photo" src="" alt="Фото разработчика">
+                </div>
+                <p class="dev-desc">
+                    Привет! Я создатель этого интерактивного опыта. Люблю код, дизайн и Metal Gear Rising. 
+                    Здесь собраны мои ключевые достижения на пути к мастерству.
+                </p>
+            </div>
+
+            <!-- Achievements Grid -->
+            <h3 class="dev-section-title">Достижения</h3>
+            <div class="dev-grid">
+                <!-- Card 1 -->
+                <div class="dev-card">
+                    <div class="dev-card-img">
+                        <img src="" alt="Achievement 1">
+                    </div>
+                    <p>Мастер консоли: Написал "Hello World" без ошибок с первого раза.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="dev-card">
+                    <div class="dev-card-img">
+                        <img src="" alt="Achievement 2">
+                    </div>
+                    <p>Повелитель багов: Исправил ошибку, которую сам же и создал.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="dev-card">
+                    <div class="dev-card-img">
+                        <img src="" alt="Achievement 3">
+                    </div>
+                    <p>Ночной кодер: Пережил 24-часовой хакатон на одном кофе.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="dev-card">
+                    <div class="dev-card-img">
+                        <img src="" alt="Achievement 4">
+                    </div>
+                    <p>Дизайнер от бога: Центрировал div с первой попытки.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOOLS PAGE CONTAINER -->
+    <div id="tools-page-container">
+        <div class="tools-header">
+            <h2>Используемые Инструменты</h2>
+            <button class="close-tools-btn" onclick="closeToolsPage()">Назад</button>
+        </div>
+        
+        <div class="tools-content">
+            <ul class="tools-list">
+                <li class="tool-item">
+                    <div class="tool-icon">H</div>
+                    <div class="tool-info">
+                        <h3>HTML5</h3>
+                        <p>Основа структуры. Использованы семантические теги &lt;section&gt;, &lt;nav&gt; для разметки и &lt;canvas&gt; для эффектов.</p>
+                    </div>
+                </li>
+                <li class="tool-item">
+                    <div class="tool-icon">C</div>
+                    <div class="tool-info">
+                        <h3>CSS3</h3>
+                        <p>Стилизация через Flexbox и Grid. Анимации @keyframes для эффектов появления и "глюков". Адаптивность под мобильные устройства.</p>
+                    </div>
+                </li>
+                <li class="tool-item">
+                    <div class="tool-icon">J</div>
+                    <div class="tool-info">
+                        <h3>JavaScript (ES6+)</h3>
+                        <p>Логика переключения экранов, скролл-анимации, управление DOM и интеграция с YouTube API.</p>
+                    </div>
+                </li>
+                <li class="tool-item">
+                    <div class="tool-icon">F</div>
+                    <div class="tool-info">
+                        <h3>Google Fonts</h3>
+                        <p>Шрифты 'Orbitron' (заголовки) и 'Teko' (текст) для создания атмосферы киберпанка в стиле MGR.</p>
+                    </div>
+                </li>
+                <li class="tool-item">
+                    <div class="tool-icon">Y</div>
+                    <div class="tool-info">
+                        <h3>YouTube IFrame API</h3>
+                        <p>Фоновое воспроизведение саундтреков персонажей с программным управлением без визуального плеера.</p>
+                    </div>
+                </li>
+                <li class="tool-item">
+                    <div class="tool-icon">C</div>
+                    <div class="tool-info">
+                        <h3>Canvas API</h3>
+                        <p>Процедурная генерация анимации молний и визуальных эффектов на стартовом экране.</p>
+                    </div>
+                </li>
+                <li class="tool-item">
+                    <div class="tool-icon">P</div>
+                    <div class="tool-info">
+                        <h3>Placehold.co</h3>
+                        <p>Генерация изображений-заглушек с заданными размерами и цветами для прототипирования.</p>
+                    </div>
+                </li>
+                <li class="tool-item">
+                    <div class="tool-icon">V</div>
+                    <div class="tool-info">
+                        <h3>VS Code</h3>
+                        <p>Среда разработки с использованием плагинов для форматирования и отладки кода.</p>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
 
@@ -1320,6 +1759,32 @@
             if (player) {
                 player.stopVideo();
             }
+        }
+
+        // --- Developer Page Logic ---
+        function openDevPage() {
+            const menuContent = document.getElementById('mgr-menu-content');
+            const devPage = document.getElementById('dev-page-container');
+            
+            menuContent.style.display = 'none';
+            devPage.classList.add('visible');
+        }
+
+        // --- Tools Page Logic ---
+        function openToolsPage() {
+            const menuContent = document.getElementById('mgr-menu-content');
+            const toolsPage = document.getElementById('tools-page-container');
+            
+            menuContent.style.display = 'none';
+            toolsPage.classList.add('visible');
+        }
+
+        function closeToolsPage() {
+            const menuContent = document.getElementById('mgr-menu-content');
+            const toolsPage = document.getElementById('tools-page-container');
+            
+            toolsPage.classList.remove('visible');
+            menuContent.style.display = 'flex';
         }
     </script>
 
